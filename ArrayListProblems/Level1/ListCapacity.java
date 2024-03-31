@@ -1,4 +1,4 @@
-package JavaProblems.Level1;
+package ArrayListProblems.Level1;
 
 // How do you increase the current capacity of an ArrayList?
 public class ListCapacity {

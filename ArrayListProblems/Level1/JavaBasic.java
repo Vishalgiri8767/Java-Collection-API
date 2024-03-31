@@ -1,6 +1,4 @@
-package JavaProblems.Level1;
-
-import org.w3c.dom.ls.LSOutput;
+package ArrayListProblems.Level1;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package JavaProblems.Level1;
+package ArrayListProblems.Level1;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
