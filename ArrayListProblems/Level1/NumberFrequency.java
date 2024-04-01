@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
-
+// Find the occurrence of an Element in an Array
 public class NumberFrequency {
     public static int calNumFrequency(int arr[], int element){
 
