@@ -14,7 +14,6 @@ Approach for Binary Search
         or the target element is not in the array
         If the target element is found, its index is returned, else -1 is returned.
 */
-
 public class BinarySearch {
     public static int binarySearch(int arr[],int element){
         int low=0;
@@ -22,7 +21,6 @@ public class BinarySearch {
 
         while(low <= high ) {
             int mid = (low + high)/2;
-
             if(element > arr[mid]){
                 low=mid+1;
             }
@@ -35,8 +33,8 @@ public class BinarySearch {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1,2,3,4,5,6,7,8,9};
-        int element = 1;
+        int arr[] = {1,2,3,4,5,7,8,9};
+        int element = 8;
         int index = binarySearch(arr,element);
         System.out.println(index);
 
