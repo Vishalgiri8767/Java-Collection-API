@@ -18,7 +18,7 @@ public class FindMaxValue {
         return max;
     }
     public static void main(String[] args) {
-        int[] arr ={};
+        int[] arr ={4,6,9,8,5,3};
         FindMaxValue max1 = new FindMaxValue();
         int max = max1.maxValue(arr);
         System.out.println(max);
