@@ -6,7 +6,6 @@ public class LeapYear {
     public static boolean checkLeapYear(int year){
 
         if ((year%4==0 && year%100!=0) || (year%400==0)){
-           // System.out.println("leap year");
             return true;
         }
         else
