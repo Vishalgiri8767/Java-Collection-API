@@ -9,9 +9,10 @@ public class GCD {
         int big=0;
         int divisor=0;
         if(x>y)
-            big=x;
+            small=x;
         else
-            small=y;
+            big=y;
+        System.out.println("small : "+small );
         for(int i=1; i<=small; i++){
             if(small%i==0 && big%i==0){
                 System.out.println(i);
