@@ -5,17 +5,25 @@ import java.util.Scanner;
 // greates common divisor.
 public class GCD {
     public static int findGcd(int x, int y){
-        int small=0;
+        int small = 0;
         int big=0;
         int divisor=0;
-        if(x>y)
-            small=x;
+        if(x>y) {
+            big = x;
+            small = y;
+        }
+        else if(x<y) {
+            big = y;
+            small = x;
+        }
         else
-            big=y;
+            big=small=x=y;
         System.out.println("small : "+small );
-        for(int i=1; i<=small; i++){
+        System.out.println("big :"+ big);
+
+        for(int i=2; i<=small; i++){
             if(small%i==0 && big%i==0){
-                System.out.println(i);
+            //    System.out.println(i);
                 divisor=i;
             }
         }
