@@ -12,7 +12,7 @@ public class SumNNumbers {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter number");
+        System.out.println("Enter number :");
         int number = sc.nextInt();
         int sum = doSum(number);
         System.out.println(sum);
