@@ -2,6 +2,7 @@ package BasicProblems;
 
 import java.util.Scanner;
 
+//Write a Java program to count the occurrence of a specific character in a string.
 public class OccurenceOfNum {
     public static int findOccurance(int[] arr,int target){
         int count=0;
