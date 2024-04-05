@@ -1,10 +1,9 @@
 package SortingAlgorithms;
-
 import java.util.Arrays;
 
 public class SelectionSort {
     public static void main(String[] args) {
-        int [] arr = {3,9,4,10,6,9,0};
+        int [] arr = {};
         int[] sortedArr=selectionSort(arr);
         System.out.println(Arrays.toString(sortedArr));
     };
