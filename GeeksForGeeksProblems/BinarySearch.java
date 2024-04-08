@@ -5,10 +5,13 @@ package GeeksForGeeksProblems;
 public class BinarySearch {
     public static void main(String[] args) {
         int[] arr = {3,9,3,4,1,8,6};
-        int k=14;
+        int k=3;
         BinarySearch bs = new BinarySearch();
         int result = bs.binarySearch(arr,k);
-        System.out.println(result);
+        if(result != -1)
+            System.out.println("Element found at index "+result);
+        else
+            System.out.println("element not found");
     }
     public int binarySearch(int[] arr, int k){
         int start = 0;
