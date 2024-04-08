@@ -16,7 +16,9 @@ public class MinAndMaxNumber {
         long n = arr.length;
         Pair pair = getMinMax(arr,n);
         System.out.println("max number: "+pair.max);
+        System.out.println("min number: "+pair.min);
     }
+
     static Pair getMinMax(long a[], long n)
     {
         Arrays.sort(a);
