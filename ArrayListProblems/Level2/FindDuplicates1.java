@@ -1,18 +1,32 @@
 package ArrayListProblems.Level2;
 
-import java.net.Inet4Address;
 import java.util.ArrayList;
 import java.util.Arrays;
-public class FindDuplicates {
+public class FindDuplicates1 {
     public static void main(String[] args) {
-        int[] arr = {3,2,3,9,4,5,7,5};
+        int[] arr = {3,2,9,4,5,7,5};
         int n = arr.length;
-        ArrayList<Integer>dupArr= method1(arr,n);
-        System.out.println(dupArr);
+     //   ArrayList<Integer>dupArr= method1(arr,n);
+       // System.out.println(dupArr);
+        int ans = method2(arr,n);
+        System.out.println(ans);
     };
-   /* public static ArrayList<Integer> method2(int arr[], int n){
-
-    };*/
+    //visited soloution.
+    public static int method2(int arr[], int n){
+        int ans = -1;
+        for(int i=0; i<arr.length; i++){
+            int index = Math.abs(arr[i]);
+            // already visited.
+            if(arr[index]<0){
+                ans = index;
+                break;
+            }
+            //visited mark
+            else
+                arr[index] *= -1;
+        }
+        return ans;
+    };
     // first =>sort the array.
     // second => adjucent elements are equal then return;
     // arr[i]==arr[i+1];
