@@ -8,6 +8,7 @@ public class TempConversion {
         System.out.println(temp);
     }
     static ArrayList<Double> convertTemp(double celsius){
+
         ArrayList<Double> temp = new ArrayList<>();
         double kelvin = celsius + 273.15;
         temp.add(kelvin);
