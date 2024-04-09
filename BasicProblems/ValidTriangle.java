@@ -1,6 +1,7 @@
 package BasicProblems;
 // for valid triangle :
 // two sides sum > other side.
+// program for checking given triangle valid or not
 
 import java.util.Scanner;
 
