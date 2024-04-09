@@ -18,6 +18,7 @@ public class EvenAndOdd {
     public static Arr1 findOddEven(ArrayList<Integer> list){
         ArrayList<Integer>even = new ArrayList<>();
         ArrayList<Integer>odd = new ArrayList<>();
+
         for(int i=0; i<list.size(); i++){
             if(list.get(i) % 2==0)
                 even.add(list.get(i));
