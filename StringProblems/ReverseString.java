@@ -1,11 +1,14 @@
 package StringProblems;
 
+import java.util.Scanner;
+
 // program for reversing a given string.
 public class ReverseString {
 
     public static void main(String[] args) {
-        String str = "123";
 
+        Scanner sc = new Scanner(System.in);
+        String str = sc.next();
         System.out.println(reverse(str));
     }
 
