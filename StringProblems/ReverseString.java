@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class ReverseString {
 
     public static void main(String[] args) {
-
+        // take input from the user
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
         System.out.println(reverse(str));
