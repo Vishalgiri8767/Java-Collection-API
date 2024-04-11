@@ -1,5 +1,6 @@
 package StringProblems;
 
+// program for reversing a given string.
 public class ReverseString {
 
     public static void main(String[] args) {
