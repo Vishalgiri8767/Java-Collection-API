@@ -5,24 +5,16 @@ import java.util.Arrays;
 public class ReverseWordInString {
     public static void main(String[] args) {
         String str = "i.like.this.program.very.much";
-        reverseWordInString(str);
+        String line = reverseWordInString(str);
+        System.out.println(line);
     };
-    public static void reverseWordInString(String str){
-
-        String st[]  = str.split("\\.");
-        StringBuilder sb = new StringBuilder();
-        String s = "";
-        System.out.println(Arrays.toString(st));
-       /* for (int i = st.length-1 ; i > 0; i--) {
-            System.out.print(st[i]+ ".");
-        }*/
-        for (int i = st.length-1; i > 0; i--) {
-            s = s+st[i]+".";
-            sb.append(st[i]);
-            sb.append(".");
+    public static String reverseWordInString(String S)
+        {
+            String res = "";
+            String[] str = S.split("\\.");
+            for(int i=str.length-1;i>=0;i--){
+                res=res+str[i]+".";
+            }
+            return res.substring(0,res.length()-1);
         }
-        System.out.println(sb);
-        System.out.println(s.substring(0,s.length()-1));
-        System.out.println(sb.substring(0,s.length()-1));
     }
-}
