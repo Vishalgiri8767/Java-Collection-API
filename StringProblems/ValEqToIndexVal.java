@@ -1,6 +1,7 @@
 package StringProblems;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ValEqToIndexVal {
     public static ArrayList<Integer> valueEqualToIndex(int[] arr){
