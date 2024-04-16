@@ -1,5 +1,6 @@
 package StringProblems;
 
+//8. How do you remove spaces from a string in Java?
 public class RemoveSpaces {
     public static void main(String[] args) {
         String str = "  vishal giri ";
