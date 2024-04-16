@@ -7,16 +7,16 @@ public class RemoveSpaces {
         System.out.println(s.toString());
     }
     public static String removeSpaces(String str){
-        StringBuilder sb = new StringBuilder();
+   //     StringBuilder sb = new StringBuilder();
         String s = "";
         char[] ch = str.toCharArray();
         for(char letter: ch){
             if(!Character.isWhitespace(letter)) {
-                sb.append(letter);
+           //     sb.append(letter);
                 s+=letter;
             }
         };
-        System.out.println(sb);
+   //     System.out.println(sb);
         return s;
     }
 }
