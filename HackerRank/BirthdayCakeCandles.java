@@ -28,12 +28,18 @@ class Result {
     public static int birthdayCakeCandles(List<Integer> candles) {
         // Write your code here
         int temp = 1;
-        Collections.sort(candles, Collections.reverseOrder());
-        for(int i=0; i<candles.size(); i++){
-            if(candles.get(i)==candles.get(i+1))
-                temp += 1;
-            else
-                break;
+        if(candles.size()==1)
+            return candles.get(0);
+        else {
+
+            Collections.sort(candles, Collections.reverseOrder());
+            for (int i = 0; i < candles.size(); i++) {
+                if (candles.get(i) == candles.get(i + 1))
+                    temp += 1;
+                else
+                    break;
+            }
+            ;
         };
         System.out.println("talletst candle is: "+ candles.get(0));
         return temp;
@@ -45,7 +51,7 @@ class Result {
 public class BirthdayCakeCandles {
     public static void main(String[] args) throws IOException {
 
-        List<Integer> candles = new ArrayList<>(Arrays.asList(4,1,2,5,4));
+        List<Integer> candles = new ArrayList<>(Arrays.asList(4));
 
         int result = Result.birthdayCakeCandles(candles);
         System.out.println("and it present "+result+" times");
