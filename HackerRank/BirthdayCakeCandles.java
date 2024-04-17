@@ -34,7 +34,8 @@ class Result {
                 temp += 1;
             else
                 break;
-        }
+        };
+        System.out.println("talletst candle is: ");
         return temp;
 
     }
