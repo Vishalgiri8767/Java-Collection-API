@@ -48,6 +48,6 @@ public class BirthdayCakeCandles {
         List<Integer> candles = new ArrayList<>(Arrays.asList(4,1,2,5,4));
 
         int result = Result.birthdayCakeCandles(candles);
-        System.out.println("present "+result+" times");
+        System.out.println("and it present "+result+" times");
     }
 }
