@@ -2,6 +2,7 @@ package HackerRank;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 /*Given five positive integers, find the minimum and maximum
         values that can be calculated by summing exactly four
@@ -11,20 +12,21 @@ import java.util.List;
 
 public class MiniMaxSum {
     public static MinMax findMinMaxSum(List<Integer> arr){
-        long min = 0;
-        long max = 0;
+        arr.sort(Comparator.naturalOrder());
+        long minSum = 0;
+        long maxSum = 0;
         for (int i = 1; i < arr.size(); i++)
-            max +=arr.get(i);
+            maxSum +=arr.get(i);
         for (int i = 0; i < arr.size()-1; i++)
-            min += arr.get(i);
+            minSum += arr.get(i);
 
-        return new MinMax(min,max);
+        return new MinMax(minSum,maxSum);
     }
     public static void main(String[] args) {
-        List<Integer> arr = new ArrayList<>(Arrays.asList(1,3,5,7,9));
+        List<Integer> arr = new ArrayList<>(Arrays.asList(3,2,7,9));
         MinMax mn = findMinMaxSum(arr);
-        System.out.println(mn.min);
-        System.out.println(mn.max);
+        System.out.println("Minimun Sum: "+mn.min);
+        System.out.println("Maximum Sum: "+mn.max);
     }
 }
 class MinMax{
