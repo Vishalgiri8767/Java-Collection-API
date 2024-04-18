@@ -1,10 +1,7 @@
 package HackerRank;
 
 import java.io.*;
-        import java.math.*;
-        import java.security.*;
-        import java.text.*;
-        import java.util.*;
+import java.util.*;
 
 /* You are in charge of the cake for a child's birthday.
 You have decided the cake will have one candle for each year
@@ -47,12 +44,9 @@ class Result {
     }
 
 }
-
 public class BirthdayCakeCandles {
     public static void main(String[] args) throws IOException {
-
-        List<Integer> candles = new ArrayList<>(Arrays.asList(4));
-
+        List<Integer> candles = new ArrayList<>(Arrays.asList(4,1));
         int result = Result.birthdayCakeCandles(candles);
         System.out.println("and it present "+result+" times");
     }
