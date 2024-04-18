@@ -27,14 +27,32 @@ public class DiagonalDiffrence {
         ArrayList<Integer> row3 = new ArrayList<>();
         row3.add(7);
         row3.add(8);
-        row3.add(9);
+        row3.add(4);
         // add row1 in arraylist.
         arrayList2D.add(row3);
         // call function
-        diagonalDifference(arrayList2D);
+        int diff = diagonalDifference(arrayList2D);
+        System.out.println("difference between sum of diagonals is: ");
+        System.out.println(diff);
     }
     public static int diagonalDifference(ArrayList<ArrayList<Integer>> arr) {
-        int left_d_sum = 0;
-        int right_d_sum = 0;
-    };
+        int left_sum = 0;
+        int right_sum = 0;
+        for(int i=0; i<arr.size(); i++){
+            for (int j = 0; j < arr.size(); j++) {
+
+                if(i==j){
+                    left_sum+=arr.get(i).get(j);
+                };
+                if(i+j==arr.size()-1){
+                    right_sum+=arr.get(i).get(j);
+                };
+
+            }
+        }
+        System.out.println(left_sum);
+        System.out.println(right_sum);
+        return Math.abs(left_sum-right_sum);
+
+    }
 }
