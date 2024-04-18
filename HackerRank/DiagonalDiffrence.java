@@ -25,9 +25,9 @@ public class DiagonalDiffrence {
 
         // row3
         ArrayList<Integer> row3 = new ArrayList<>();
-        row3.add(7);
+        row3.add(9);
         row3.add(8);
-        row3.add(4);
+        row3.add(9);
         // add row1 in arraylist.
         arrayList2D.add(row3);
         // call function
