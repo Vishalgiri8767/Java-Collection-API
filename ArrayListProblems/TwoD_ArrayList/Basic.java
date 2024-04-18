@@ -33,6 +33,27 @@ public class Basic {
         arrayList2D.add(row3);
 
         System.out.println(arrayList2D);
-        System.out.println(arrayList2D.size());
-    }
+
+        int left_d_sum = 0;
+        int right_d_sum = 0;
+        for (int i = 0; i < arrayList2D.size(); i++) {
+                 left_d_sum+=arrayList2D.get(0).get(0);
+                 left_d_sum+=arrayList2D.get(1).get(1);
+                 left_d_sum+=arrayList2D.get(2).get(2);
+            }
+        System.out.println(left_d_sum);
+
+        }
+      //  System.out.println(arrayList2D.size());
+
+      //  System.out.println(arrayList2D.get(0).get(0));
+      //  System.out.println(arrayList2D.get(0).get(arrayList2D.size()));
+
+      /*  for (int i = 0; i < arrayList2D.size(); i++) {
+            ArrayList<Integer> row = arrayList2D.get(i);
+            for (int j = 0; j < row.size(); j++) {
+                System.out.println(row.get(j));
+            }
+        };*/
+
 }
