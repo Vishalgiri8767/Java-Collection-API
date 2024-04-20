@@ -4,7 +4,7 @@ import java.util.*;
 
 class CharFrequency {
     public static void main(String[] args) {
-        findRep("Applea");
+        findRep("Appalea");
     }
 
     public static void findRep(String str) {
@@ -18,6 +18,7 @@ class CharFrequency {
             } else
                 rep.put(key, 1);
         }
+        System.out.println("duplicate characters: ");
         for(Map.Entry<Character,Integer> val :rep.entrySet()){
             if(val.getValue()>1)
                 System.out.println(val.getKey() + ":"+ val.getValue());
