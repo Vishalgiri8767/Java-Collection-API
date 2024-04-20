@@ -15,6 +15,7 @@ class HashMapEx {
         map.put("china",160);
         System.out.println(map);
 
+/*
         // removing values.
         map.remove("us");
         System.out.println(map);
@@ -29,6 +30,7 @@ class HashMapEx {
         // check element present or not.
         boolean isPresent = map.containsValue("Thane");
         System.out.println(isPresent);
+*/
 
         // iterate
         for(Map.Entry<String,Integer> country:map.entrySet()){
@@ -36,7 +38,10 @@ class HashMapEx {
             System.out.println(country.getValue());
         };
         for(Map.Entry<String,Integer> value:map.entrySet()){
-            System.out.println(value.getKey());
+            System.out.println(value.getValue());
+        }
+        for(Map.Entry<String,Integer>pair:map.entrySet()){
+            System.out.println(pair.getKey()+" "+pair.getValue());
         }
     }
 }
