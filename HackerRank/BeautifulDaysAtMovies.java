@@ -3,11 +3,10 @@ package HackerRank;
 public class BeautifulDaysAtMovies {
     public static void main(String[] args) {
         int result = beautifulDays(20, 23, 6);
-        System.out.println(result);
+        System.out.println("beautiful day: "+result);
 
       //  beautifulDays(20,24,6);
     }
-
     public static int beautifulDays(int i, int j, int k) {
         // Write your code here
         int beautyDay = 0;
