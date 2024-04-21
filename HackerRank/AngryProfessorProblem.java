@@ -17,14 +17,14 @@ public class AngryProfessorProblem {
             if(a.get(i)<1){
                 count++;
                 if(count>=k)
-                    return "NO";
+                    return "Class will continue";
             }
         }
-        return "YES";
+        return "Class will cancel";
     }
     public static void main(String[] args) {
-        int k = 2;
-        List<Integer> a = new ArrayList<>(Arrays.asList(0, -1, 2, 1));
+        int k = 4;
+        List<Integer> a = new ArrayList<>(Arrays.asList(0, -1,-2, 2, 1));
         String result = angryProfessor(k,a);
         System.out.println(result);
     }
