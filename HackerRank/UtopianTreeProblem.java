@@ -2,18 +2,20 @@ package HackerRank;
 
 public class UtopianTreeProblem {
     public static void main(String[] args) {
-        int result = utopianTree(4);
-      //  System.out.println(result);
+        int result = utopianTree(0);
+        System.out.println(result);
     }
     public static int utopianTree(int n) {
         int result = 1;
+        if (n==0)
+            return 1;
         for (int i = 1; i <= n; i++) {
             if(i%2==0){
                 result +=1;
-                System.out.println(result);
+                //System.out.println(result);
             }else {
                 result *= 2;
-                System.out.println(result);
+               // System.out.println(result);
             }
         }
         return result;
