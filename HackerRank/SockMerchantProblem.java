@@ -3,6 +3,10 @@ package HackerRank;
 import java.util.List;
 import java.util.*;
 
+/*Given an array of integers representing the color of each sock,
+        determine how many pairs of socks with matching colors
+        there are.*/
+
 public class SockMerchantProblem {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(Arrays.asList());
