@@ -26,7 +26,7 @@ public class DrawingBook {
                 if(i >= p)
                     count++;
             }
-            System.out.println(count);
+            System.out.println("need to flip page = "+count);
         }
 
     }
