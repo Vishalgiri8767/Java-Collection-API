@@ -28,6 +28,5 @@ public class DrawingBook {
             }
             System.out.println("need to flip page = "+count);
         }
-
     }
 }
