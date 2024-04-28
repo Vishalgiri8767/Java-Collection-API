@@ -1,5 +1,6 @@
 package JavaConcepts;
 
+// tight coupling is a one class highly dependent on other class.
 public class TightCoupling {
     public static void main(String[] args) {
         Programmer p = new Programmer();
