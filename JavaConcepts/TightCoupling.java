@@ -8,3 +8,8 @@ class Laptop{
         System.out.println("Laptop class");
     }
 }
+class Programmer{
+    public void coupling(Laptop lap){
+        System.out.println("Programmer class");
+    }
+}
