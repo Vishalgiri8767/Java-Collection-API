@@ -1,7 +1,9 @@
 package JavaConcepts;
 
 public class TightCoupling {
+    public static void main(String[] args) {
 
+    }
 }
 class Laptop{
     public static void coupling(){
