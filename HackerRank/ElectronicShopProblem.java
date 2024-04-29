@@ -8,7 +8,7 @@ A person wants to determine the most expensive computer keyboard and
 */
 
 public class ElectronicShopProblem {
-    public static void getMoneySpent(int[] keyboards, int[] drives, int b){
+    public static int getMoneySpent(int[] keyboards, int[] drives, int b){
         int total = 0;
         int max = -1;
         for(int keyboard: keyboards){
@@ -19,12 +19,16 @@ public class ElectronicShopProblem {
                      max=total;
             }
         }
-        System.out.println(max);
+        if(max>=total)
+            return -1;
+
+        return max;
     };
     public static void main(String[] args) {
-        int[] keyboards = {40,50,60};
-        int[] drives = {5,8,12};
-        int b = 60;
-        getMoneySpent(keyboards,drives,b);
+        int[] keyboards = {5,1,1};
+        int[] drives = {4};
+        int b = 5;
+        int result = getMoneySpent(keyboards,drives,b);
+        System.out.println(result);
     }
 }
