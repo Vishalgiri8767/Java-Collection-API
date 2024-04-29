@@ -14,7 +14,7 @@ public class ElectronicShopProblem {
         for(int keyboard: keyboards){
             for(int drive:drives){
                  total = drive + keyboard;
-                System.out.println(total);
+              //  System.out.println(total);
                  if(total <= b && total > max)
                      max=total;
             }
