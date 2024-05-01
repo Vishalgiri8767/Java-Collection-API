@@ -1,0 +1,9 @@
+exception is a uncertain or unwanted event occure during the execution of program i.e at runtime
+that disrupt the flow of normal program.
+-exception can be caught and handled by a program.
+
+ exception types:
+    Build in exception.
+        -checked exception- compile time exception. checked at a time of compilation.
+        -unchecked exception - run time exception.
+
