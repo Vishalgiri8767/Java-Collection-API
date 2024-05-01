@@ -8,7 +8,6 @@ public class ExceptionHandling {
         System.out.println(area);
     }
 }
-
 class Rectangle{
     public int width, height;
     public Rectangle(int width, int height){
